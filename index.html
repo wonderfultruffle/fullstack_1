@@ -1,7 +1,7 @@
 <html lang='ko'>
   <head>
     <meta charset="utf-8">
-    <title>프로젝트A-1.자기소개</title>
+    <title>index</title>
     <style>
       header{
         height: 30px;
@@ -27,11 +27,9 @@
       li{
         margin: 0 6px;
       }
-      .menubtn input{
+      .menubtn button{
         width: 110px;
         height: 30px;
-        border: 0;
-        background-color: green;
       }
       nav{
         position: absolute;
@@ -49,28 +47,33 @@
       }
       article{
         text-align: center;
-        margin: 0 15% 0 15%;
+        margin: 0 15% 30px 15%;
       }
       .contentbtn_container{
         justify-content: center;
       }
-      .contentbtn input{
+      .contentbtn button{
         width: 110px;
         height: 110px;
         border: 0;
         color: white;
-        background-color: green;
         font-size: 16px;
       }
-      input{
+      button{
         box-shadow: 2px 2px 4px 2px grey;
+        border: none;
+        background-color: green;
+        cursor: pointer;
+      }
+      button:active{
+        box-shadow: 1.5px 1.5px 2px 1px grey;
       }
       img{
         border: 1px solid grey;
       }
       footer{
         position: absolute;
-        bottom: 50px;
+        top: 850px;
         width: 100%;
         height: 5px;
         background-color: grey;
@@ -85,20 +88,12 @@
   <body>
     <header>
       <span class="menu">
-        <form>
-          <ul class="menu_container">
-          <li class="menubtn"><input type="button" value="홈"></li>
-          <li class="menubtn"><input type="button" value="자기소개"></li>
-          <li class="menubtn"><input type="button" value="내사진"></li>
-          <li class="menubtn"><input type="button" value="몇시에요"></li>
-          </ul>
-        </form>
-        <!-- <ul class="menu_container">
-          <li class="menubtn"><a href="">홈</a>
-          <li class="menubtn"><a href="">자기소개</a></li>
-          <li class="menubtn"><a href="">내사진</a></li>
-          <li class="menubtn"><a href="">몇시에요</a></li>
-        </ul> -->
+        <ul class="menu_container">
+          <li class="menubtn"><button onclick="location.href='index.html'">홈</button>
+          <li class="menubtn"><button onclick="location.href='abountme.html'">자기소개</button>
+          <li class="menubtn"><button>내사진</button>
+          <li class="menubtn"><button>몇시에요</button>
+        </ul>
       </span>
     </header>
 
@@ -110,12 +105,10 @@
       <p>함께 개발하고 같이 성장하고 싶어요.<br> 서울 특별시 어딘가 살고 있어요.</p>
 
       <article>
-        <form>
-          <ul class="contentbtn_container">
-            <li class="contentbtn"><input type="button" value="자기소개"></li>
-            <li class="contentbtn"><input type="button" value="내사진"></li>
-          </ul>
-        </form>
+        <ul class="contentbtn_container">
+          <li class="contentbtn"><button onclick="location.href='abountme.html'">자기소개</button>
+          <li class="contentbtn"><button>내사진</button>
+        </ul>
       </article>
 
       <article>
@@ -124,8 +117,8 @@
     </section>
     <footer>
       <div>
-        jh2two@gmail.com
-        <br>
+        jh2two@gmail.com<br>
+        imonlymine@naver.com<br>
         http://gitgun.com/wonderfultruffle
       </div>
     </footer>
